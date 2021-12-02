@@ -18,7 +18,7 @@ class BudgetList:
             self.sum_overages = self.sum_overages + item
 
     def __len__(self):
-        return sum(map(len, self.sum_expenses)), sum(map(len, self.sum_overages))
+        return len(str(self.sum_expenses)) + len(str(self.sum_overages))
 
 
 def main():
